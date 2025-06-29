@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'home_screen.dart';
-import 'register_screen.dart';
+import 'package:attendance_app/screens/home_screen.dart'; // Updated import
+import 'package:attendance_app/screens/register_screen.dart'; // Updated import
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -48,10 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
               obscureText: true,
             ),
             SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: loginUser,
-              child: Text("Login"),
-            ),
+            ElevatedButton(onPressed: loginUser, child: Text("Login")),
             TextButton(
               onPressed: () {
                 Navigator.push(
